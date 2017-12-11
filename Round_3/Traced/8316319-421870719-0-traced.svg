@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with svg_stack (http://github.com/astraw/svg_stack) -->
+<svg xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1302.0" height="544.0">
+  <defs/>
+  <g id="id0:id0" transform="matrix(1.25,0,0,1.25,0.0,0.0)"><g transform="translate(0.000000,435.200000) scale(0.040000,-0.040000)" fill="#ffffff" stroke="none">
+<path d="M0 5440 l0 -5440 13020 0 13020 0 0 5440 0 5440 -13020 0 -13020 0 0 -5440z m22202 1283 c21 -20 28 -36 28 -65 0 -31 -8 -45 -45 -83 l-46 -45 -10436 0 -10437 0 -28 27 c-35 33 -37 81 -6 123 l22 30 10406 0 10407 0 18 20 c27 30 82 27 117 -7z"/>
+</g>
+</g>
+  <g id="id1:id1" transform="matrix(1.25,0,0,1.25,0.0,0.0)"><g transform="translate(0.000000,435.200000) scale(0.040000,-0.040000)" fill="#000000" stroke="none">
+<path d="M22075 6750 l-18 -20 -10402 0 -10401 0 -32 -33 c-45 -46 -45 -102 -1 -152 l31 -35 10452 1 10451 1 48 54 c60 69 64 114 16 169 -27 31 -37 35 -78 35 -35 0 -53 -5 -66 -20z"/>
+</g>
+</g>
+</svg>
