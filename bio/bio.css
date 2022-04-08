@@ -1,0 +1,31 @@
+@keyframes bump {
+    0% {
+        background-size: 25%;
+    }
+    25% {
+        background-size: 30%;
+    }
+    50% {
+        background-size: 25%;
+    }
+    75% {
+        background-size: 28%;
+    }
+    100% {
+        background-size: 25%;
+    }
+}
+#bio-link {
+    background-image: url("../images/page_ind.svg");
+    background-size: 25%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+#bio-link a{
+    pointer-events: none;
+}
+#bio-link:hover {
+    color: var(--coffee);
+    animation: bump .4s ease-in-out 1;
+    cursor: default;
+}
