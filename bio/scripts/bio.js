@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    var imgurl = '../images/CM-logo.gif'+'?a='+Math.random();
-    $("#logo img").attr('src',imgurl);
-    $("#logo img").attr('alt','Caleb McTwigan');
-    console.log(imgurl);
+    let maths = (500*Math.pow(.84,4));
+    $(document).ready(function(){$("#bio_bg").css({'height':(($("#bio_blurb").height())+(maths)+'px')})});
+    $(window).resize(function() {
+        $("#bio_bg").css({'height':(($("#bio_blurb").height())+(maths)+'px')});
+    })
 }); // ready function end

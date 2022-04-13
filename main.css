@@ -31,46 +31,43 @@ body {
   font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
 }
 .header {
-  overflow: hidden;
   position: fixed;
   width: 100%;
-  height: 160px;
   top: 0;
   left: 0;
   z-index: 20;
   background-color: white;
 }
-@keyframes svg-mint {
-  from {points: 0px;}
-  to {width: 400px;}
-}
 .svg-corners {
   position: fixed;
-  overflow: hidden;
-  width: 300px;
+  width: 400px;
   top: 0;
   right: 0;
   pointer-events: none;
   z-index: -1;
 }
-.svg-corners svg {
-  float: right;
+#coral_svg, #mint_svg{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #mint {
   fill: var(--mint);
-  d: path("M0 0 L100 0 L100 15 Z");
-  transition: 1s cubic-bezier(0.14, 0.05, 0.36, 0.98) .05s;
+  d: path("M45 0 L100 0 L100 15 Z");
+  transition: 1s cubic-bezier(0.14, 0.05, 0.36, 0.98) .07s;
+}
+.header-right:hover #mint {
+  d: path("M0 0 L100 0 L100 12 Z");
+  transition: .5s cubic-bezier(0.14, 0.05, 0.36, 0.98) .05s;
 }
 #coral {
   fill: var(--coral);
-  d: path("M50 0 L100 0 L100 20 Z");
-  transition: .75s cubic-bezier(0.14, 0.05, 0.36, 0.98);
-}
-.header-right:hover #mint {
-  d: path("M30 0 L100 0 L100 20 Z");
+  d: path("M60 0 L100 0 L100 16 Z");
+  transition: 1s cubic-bezier(0.14, 0.05, 0.36, 0.98) .05s;
 }
 .header-right:hover #coral {
-  d: path("M70 0 L100 0 L100 30 Z");
+  d: path("M30 0 L100 0 L100 14 Z");
+  transition: .7s cubic-bezier(0.14, 0.05, 0.36, 0.98) .07s;
 }
 .header a#logo {
   width: 150px;
@@ -99,19 +96,55 @@ body {
   color: var(--coffee);
   margin: 10px 0 0 60px;
   padding: 0 10px;
+  position: relative;
 }
 .header-right a:hover {
   color: var(--coral);
 }
-#title {
-  font-family: 'Runalto','Times New Roman', Times, serif;
-  font-size: 1.8rem;
-  color: var(--coffee);
-  margin-right: 4px;
+@keyframes bump {
+  0%   { background-size: 23%; }
+  25%  { background-size: 28%; }
+  50%  { background-size: 23%; }
+  75%  { background-size: 26%; }
+  100% { background-size: 23%; }
 }
-@keyframes title {
-  from {width: 0px;}
-  to {width: 400px;}
+#current_page {
+  background-image: url("images/page_ind.svg");
+  background-size: 23%;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+#current_page a{
+  pointer-events: none;
+}
+#current_page:hover {
+  color: var(--coffee);
+  animation: bump .4s ease-in-out;
+  cursor: default;
+}
+.jumpy {
+  position: fixed;
+}
+.jumpy_bg {
+  fill: var(--mint);
+}
+.jumpy svg {
+  z-index: -1;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  left: 0;
+  d: path("M0 100 L0 100 L2000 100 L2000 100 Z");
+}
+.jumpy:hover svg .jumpy_bg {
+  animation: jumpyness .4s linear forwards;
+}
+@keyframes jumpyness{
+  0% {d: path("M0 100 L0 100 L2000 100 L2000 100 Z");}
+  33% {d: path("M0 100 L0 50 L2000 50 L2000 100 Z");}
+  66% {d: path("M0 100 L0 60 L2000 60 L2000 100 Z");}
+  100% {d: path("M0 100 L0 50 L2000 50 L2000 100 Z");}
 }
 .section {
   display: flex;
@@ -131,8 +164,6 @@ body {
   transform-origin: 0% 0%;
   height: 40px;
   width: 400px;
-/*  animation: title .75s ease-out;
-  animation-fill-mode: forwards;*/
 }
 .section-title {
   font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
@@ -153,7 +184,4 @@ body {
   height: 600px;
   display: block;
   margin-top: 20px;
-}
-#bio {
-  width: 80%;
 }

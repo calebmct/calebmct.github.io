@@ -1,31 +1,52 @@
-@keyframes bump {
-    0% {
-        background-size: 25%;
-    }
-    25% {
-        background-size: 30%;
-    }
-    50% {
-        background-size: 25%;
-    }
-    75% {
-        background-size: 28%;
-    }
-    100% {
-        background-size: 25%;
-    }
+@keyframes title {
+    from {width: 0px;}
+    to {width: 400px;}
 }
-#bio-link {
-    background-image: url("../images/page_ind.svg");
-    background-size: 25%;
-    background-repeat: repeat-x;
-    background-position: bottom;
+@keyframes bio_bg {
+    from {width: 0;}
+    to {width: 100%;}
 }
-#bio-link a{
-    pointer-events: none;
+#bio_bg {
+    background-color: var(--mint);
+    transform: rotate(-3deg);
+    transform-origin: 0% 0%;
+    animation: bio_bg forwards 1s .5s ease-out;
+    position: absolute;
+    z-index: -1;
 }
-#bio-link:hover {
-    color: var(--coffee);
-    animation: bump .4s ease-in-out 1;
-    cursor: default;
+#bio_container {
+    width: 75vw;
+    min-width: 600px;
+    min-height: 300px;
+    text-align: center;
+    position: absolute;
+    margin: 4vh auto;
+    left: 12.5vw;
+}
+#bio_content {
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    text-align: left;
+}
+#bio_content img {
+    display: absolute;
+    width: 300px;
+    border: white solid 5px;
+    margin-right: 10px;
+    float: left;
+    vertical-align: top;
+}
+#bio_header {
+    font-family: 'Runalto', 'HK Grotesk', Helvetica, sans-serif;
+    font-size: 3rem;
+    line-height: 2.5rem;
+    /* -webkit-text-stroke: 1pt var(--coffee); */
+}
+#bio_blurb {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }

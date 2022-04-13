@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <title>Caleb McTwigan | Portfolio</title>
         <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-touch-icon-57x57.png">
@@ -11,7 +12,7 @@
         <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-touch-icon-144x144.png">
         <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-touch-icon-152x152.png">
         <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
         <link rel="icon" type="image/png" sizes="96x96" href="../favicon/android-chrome-96x96.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon/android-chrome-48x48.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../favicon/android-chrome-32x32.png">
@@ -20,39 +21,76 @@
         <link rel="shortcut icon" href="../favicon/favicon.ico">
         <meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
         <meta name="msapplication-config" content="../favicon/browserconfig.xml">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="../bio/scripts/bio.js"></script>
         <link rel="stylesheet" href="../main.css" type="text/css">
         <link rel="stylesheet" href="bio.css" type="text/css">
     </head>
-	<body>
+
+    <body>
         <div class="header">
             <a href="../index.html" id="logo">
                 <img src="../images/CM-logo.png" width="150px">
             </a>
             <div class="header-right">
-                <a href="#" id="bio-link">bio</a>
-                <a href="../portfolio">portfolio</a>
-                <a href="../contact">contact</a>
+                <a href="#" id="current_page">bio</a>
+                <a href="../portfolio" class="jumpy">
+                    <svg class="jumpy_svg" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+                        <path class="jumpy_bg" d="" />
+                    </svg>portfolio
+                </a>
+                <a href="../contact" class="jumpy">
+                    <svg class="jumpy_svg" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
+                        <path class="jumpy_bg" d="" />
+                    </svg>contact
+                </a>
                 <div class="svg-corners">
-                    <svg viewBox="0 0 100 100">
-                        <path id="mint" d=""/>
+                    <svg id="mint_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path id="mint" d="" />
                     </svg>
                 </div>
                 <div class="svg-corners">
-                    <svg viewBox="0 0 100 100">
-                        <path id="coral" d=""/>
+                    <svg id="coral_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path id="coral" d="" />
                     </svg>
                 </div>
             </div>
         </div>
         <div class="section">
             <div id="section-bg"></div>
-            <div class="section-title">BIO</div>
+            <div class="section-title">bio</div>
         </div>
-        <div id="container">
-            <div id="bio">
-                Hello there!
+        <div id="bio_container">
+            <div id="bio_bg"></div>
+            <div id="bio_content">
+                <p id="bio_header">Hi, I'm Caleb McTwigan</p>
+                <table>
+                    <tr>
+                        <td valign="top">
+                            <img src="../images/bio-pic.png" />
+                        </td>
+                        <td id="bio_blurb" style="max-width:300px;">
+                            <p id="bio_height" style="margin: 0;">I am a motion designer, artist, and multi-lingual coder.
+                                I like seeking out opportunities to gain more experience, and am forever educating myself to expand my skill set.<br/><br/>
+                                I have spent most of my career working in art, or in conjunction with artists.
+                                This includes:
+                            <ul>
+                                <li>Motion Design</li>
+                                <li>Illustration</li>
+                                <li>Web Design</li>
+                                <li>Scripting & Coding</li>
+                                <li>Video Production</li>
+                                <li>Developing & Optimizing Artist's Processes</li>
+                            </ul>
+                            Outside of my creative endeavors, you may find me in the backyard with my partner watching a movie, reading a
+                            good children's book... to my sons, attempting to cling on to my dominance over the boys in
+                            video games, or narrowly avoiding electrocuting, maiming, or injuring myself while doing some
+                            DIY projects at home!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
     </body>
