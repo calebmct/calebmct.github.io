@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Caleb McTwigan | Portfolio</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../favicon/android-chrome-96x96.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/android-chrome-48x48.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon/android-chrome-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon/android-chrome-16x16.png">
+        <link rel="manifest" href="../favicon/manifest.json">
+        <link rel="shortcut icon" href="../favicon/favicon.ico">
+        <meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
+        <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../contact/scripts/contact.js"></script>
+        <link rel="stylesheet" href="../main.css" type="text/css">
+        <link rel="stylesheet" href="contact.css" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="../index.html" id="logo">
+                <img src="../images/CM-logo.png" width="150px">
+            </a>
+            <div class="header-right">
+                <a href="../bio" class="jumpy">
+                    <svg class="jumpy_svg" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                        <path class="jumpy_bg" d="" />
+                    </svg>bio
+                </a>
+                <a href="../portfolio" class="jumpy">
+                    <svg class="jumpy_svg" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+                        <path class="jumpy_bg" d="" />
+                    </svg>portfolio
+                </a>
+                <a href="#" id="current_page">contact</a>
+                <div class="svg-corners">
+                    <svg id="mint_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path id="mint" d="" />
+                    </svg>
+                </div>
+                <div class="svg-corners">
+                    <svg id="coral_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path id="coral" d="" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div id="section-bg"></div>
+            <div class="section-title">contact</div>
+        </div>
+        <div id="contact_section_container">
+            <div id="aligned_container">
+                <p id="page_header">Get in touch</p>
+                <div id="form_container">
+                    <form method="post" action="contact.php">
+                        <label for="name">name:</label><br/>
+                        <input class="input_box" id="input_name" type="text" name="name" required><br>
+                        <label for="email">email:</label><br/>
+                        <input class="input_box" id="input_email" type="email" name="email" required><br>
+                        <label for="message">message:</label><br/>
+                        <textarea class="input_box" id="input_message" type="text" name="message" rows="6" maxlength="5000" required></textarea><br><br>
+                        <button type="submit" disabled style="display: none" aria-hidden="true"></button>
+                        <input class="input_button" id="submit_button" type="submit" value="Send">
+                        <input class="input_button" id="reset_button" type="reset" value="Reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

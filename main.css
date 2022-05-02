@@ -23,7 +23,7 @@
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--coffee);
   background-color: white;
   margin: 160px 0 0 0;
@@ -102,15 +102,15 @@ body {
   color: var(--coral);
 }
 @keyframes bump {
-  0%   { background-size: 23%; }
-  25%  { background-size: 28%; }
-  50%  { background-size: 23%; }
-  75%  { background-size: 26%; }
-  100% { background-size: 23%; }
+  0%   { background-size: 15px; }
+  25%  { background-size: 17px; }
+  50%  { background-size: 15px; }
+  75%  { background-size: 16px; }
+  100% { background-size: 15px; }
 }
 #current_page {
   background-image: url("images/page_ind.svg");
-  background-size: 23%;
+  background-size: 15px;
   background-repeat: repeat-x;
   background-position: bottom;
 }
@@ -138,12 +138,12 @@ body {
   d: path("M0 100 L0 100 L2000 100 L2000 100 Z");
 }
 .jumpy:hover svg .jumpy_bg {
-  animation: jumpyness .4s linear forwards;
+  animation: jumpyness .4s ease-in forwards;
 }
 @keyframes jumpyness{
   0% {d: path("M0 100 L0 100 L2000 100 L2000 100 Z");}
-  33% {d: path("M0 100 L0 50 L2000 50 L2000 100 Z");}
-  66% {d: path("M0 100 L0 60 L2000 60 L2000 100 Z");}
+  33% {d: path("M0 100 L0 40 L2000 40 L2000 100 Z");}
+  66% {d: path("M0 100 L0 56 L2000 56 L2000 100 Z");}
   100% {d: path("M0 100 L0 50 L2000 50 L2000 100 Z");}
 }
 .section {
@@ -177,6 +177,23 @@ body {
   margin: 0 20px;
   overflow: hidden;
   z-index: 15;
+  text-align: left;
+}
+#section_container {
+  width: 75vw;
+  min-width: 700px;
+  min-height: 600px;
+  text-align: center;
+  position: absolute;
+  margin: 4vh auto;
+  left: 12.5vw;
+  display: block;
+}
+#page_header {
+  font-family: 'Runalto', 'HK Grotesk', Helvetica, sans-serif;
+  font-size: 3rem;
+  line-height: 2.5rem;
+  margin: 30px 0;
 }
 #tv {
   background: black;
