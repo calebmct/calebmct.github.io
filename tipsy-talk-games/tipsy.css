@@ -1,4 +1,4 @@
-#contact_section_container {
+#charades_section_container {
     width: 99vw;
     min-width: 700px;
     min-height: 600px;
@@ -7,70 +7,43 @@
     margin: 4vh auto;
     display: block;
     overflow: hidden;
+    background-color: var(--mint);
+    color: var(--coffee);
   }
 #aligned_container {
     width: 80%;
     position: relative;
     z-index: 10;
-    text-align: left;
+    text-align: center;
     margin: 0 auto;
 }
-#form_container {
-    border: 20pt solid var(--mint);
-    width: auto;
-    min-width: 655px;
-    min-height: 400px;
-    margin: 0 auto;
-    padding: 30px 0 30px 50px;
-}
-#contact_form {
-    font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
-}
-.input_box {
-    border: none;
-    background-color: var(--coral);
-    border-bottom: 4px solid var(--coral);
-    height: 40px;
-    width: 400px;
-    margin: 5px 0 15px 0;
-    padding: 3px 0 3px 8px;
-    font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
-    color: var(--coffee);
-    font-size: 1.3rem;
-}
-.input_box:focus {
-    outline: none;
-    background-color: var(--mint);
-}
-#input_message {
-    min-width: 600px;
-    min-height:150px;
-    height: auto;
-}
-.input_button {
-    width: 100px;
-    height: 40px;
+.prompt_button {
+    width: 300px;
+    min-height: 60px;
     border: none;
     font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
     font-size: 1.3rem;
     margin-right: 10px;
     line-height: .3rem;
 }
-#submit_button {
+.prompt_button {
     background-color: var(--blue);
     color: var(--yellow);
     transition: .25s ease-out;
 }
-#submit_button:hover {
-    background-color: var(--mint);
+.prompt_button:hover {
+    background-color: var(--coral);
     color: var(--coffee);
     transition: .45s ease-out;
 }
-#reset_button {
-    background-color: white;
-    transition: .25s ease-out;
+.prompt_button:active {
+    background-color: var(--yellow);
+    color: var(--coffee);
+    transition: .1s ease-out;
 }
-#reset_button:hover {
-    background-color: var(--coral);
-    transition: .45s ease-out;
+#cPrompt {
+    width: 700px;
+    margin: auto;
+    font-family: 'Paradroid-Mono', Helvetica, Arial, sans-serif;
+    font-size: 1.8rem;
 }
