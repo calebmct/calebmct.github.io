@@ -44,6 +44,8 @@
     text-align: center;
     min-width: 800px;
     padding-top:30px;
+    padding-bottom: 40px;
+    opacity: 0;
 }
 #resume_container {
     border: 20pt solid var(--coral);

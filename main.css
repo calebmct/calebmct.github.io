@@ -37,6 +37,8 @@ body {
   left: 0;
   z-index: 20;
   background-color: white;
+  border-bottom: solid 10px var(--yellow);
+  box-shadow: 0 0 24px 1px rgba(37,92,153,0.25);
 }
 .svg-corners {
   position: fixed;
@@ -77,22 +79,20 @@ body {
   margin: 30px 40px;
 }
 @keyframes main-links {
-  0% {opacity:0; padding-top: 0px;}
+  0% {opacity:0; padding-top: 120px;}
   50% {opacity: 50%;}
-  100% {opacity:100%; padding-top: 40px;}
+  100% {opacity:100%; padding-top: 70px;}
 }
 .header-right {
-  float: right;
-  text-align: center;
-  padding-right: 70px;
+  float:right;
   animation: main-links 1s cubic-bezier(0.02, 0.7, 0.64, 0.99) forwards;
   z-index: 100;
+  padding-right: 70px;
 }
 .header-right a {
   font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
   text-decoration: none;
   font-size: 1.6rem;
-  text-align: center;
   color: var(--coffee);
   margin: 10px 0 0 60px;
   padding: 0 10px;

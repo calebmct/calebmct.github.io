@@ -22,59 +22,23 @@
         <meta name="msapplication-config" content="../favicon/browserconfig.xml">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="../contact/contact.js"></script>
+        <script type="text/javascript" src="tipsy.js"></script>
         <link rel="stylesheet" href="../main.css" type="text/css">
-        <link rel="stylesheet" href="contact.css" type="text/css">
+        <link rel="stylesheet" href="tipsy.css" type="text/css">
     </head>
     <body>
         <div class="header">
             <a href="../index.html" id="logo">
                 <img src="../images/CM-logo.png" width="150px">
             </a>
-            <div class="header-right">
-                <a href="../bio" class="jumpy">
-                    <svg class="jumpy_svg" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-                        <path class="jumpy_bg" d="" />
-                    </svg>bio
-                </a>
-                <a href="../portfolio" class="jumpy">
-                    <svg class="jumpy_svg" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
-                        <path class="jumpy_bg" d="" />
-                    </svg>portfolio
-                </a>
-                <a href="#" id="current_page">contact</a>
-                <div class="svg-corners">
-                    <svg id="mint_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path id="mint" d="" />
-                    </svg>
-                </div>
-                <div class="svg-corners">
-                    <svg id="coral_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <path id="coral" d="" />
-                    </svg>
-                </div>
-            </div>
         </div>
         <div class="section">
             <div id="section-bg"></div>
-            <div class="section-title">contact</div>
+            <div class="section-title">Charades</div>
         </div>
         <div id="contact_section_container">
             <div id="aligned_container">
-                <p id="page_header">Get in touch</p>
-                <div id="form_container">
-                    <form onsubmit="return sendMail();" method="post">
-                        <label for="name">name:</label><br/>
-                        <input class="input_box" id="input_name" type="text" name="name" required><br>
-                        <label for="email">email:</label><br/>
-                        <input class="input_box" id="input_email" type="email" name="email" required><br>
-                        <label for="message">message:</label><br/>
-                        <textarea class="input_box" id="input_message" type="text" name="message" rows="5" maxlength="5000" required></textarea><br><br>
-                        <button type="submit" disabled style="display: none" aria-hidden="true"></button>
-                        <input class="input_button" id="submit_button" type="submit" value="send">
-                        <input class="input_button" id="reset_button" type="reset" value="reset">
-                    </form>
-                </div>
+                <p id="page_header">Receive a Prompt</p>
             </div>
         </div>
     </body>
