@@ -21,7 +21,8 @@ var charadesPrompts = [
     "Smelling your armpits for freshness",
     "Playing that game where you have to pass an orange held under your chin to another person without using hands",
     "Petting a cat",
-    "Working out with shake weights"
+    "Working out with shake weights",
+    "Licking the plate"
 ];
 var dataIndex = 0;
 function getCharadesPrompt() {
