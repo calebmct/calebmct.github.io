@@ -29,7 +29,7 @@ function getCharadesPrompt() {
     dataIndex = dataIndex+1;
     var returned = charadesPrompts[dataIndex];
     console.log(dataIndex);
-    if (dataIndex > 22) {
+    if (dataIndex > 23) {
         document.getElementById("cPrompt").innerHTML = "ALL DONE! REFRESH TO START OVER"
     } else {
         document.getElementById("cPrompt").innerHTML = returned;
