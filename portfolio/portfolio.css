@@ -1,16 +1,16 @@
 @font-face {
   font-family: "HK Grotesk";
-  src: url('fonts/hk_grotesk_pro_regular.woff2') format('woff2'), url('fonts/hk_grotesk_pro_regular.woff') format('woff');
+  src: url('../fonts/hk_grotesk_pro_regular.woff2') format('woff2'), url('../fonts/hk_grotesk_pro_regular.woff') format('woff');
   font-weight: normal;
 }
 @font-face {
   font-family: "Paradroid-Mono";
-  src: url('fonts/ParadroidMonoLight.woff2') format('woff2'), url('fonts/ParadroidMonoLight.woff') format('woff');
+  src: url('../fonts/ParadroidMonoLight.woff2') format('woff2'), url('../fonts/ParadroidMonoLight.woff') format('woff');
   font-weight: thin;
 }
 @font-face {
   font-family: "Runalto";
-  src: url('fonts/Runalto.woff') format('woff');
+  src: url('../fonts/Runalto.woff') format('woff');
   font-weight: normal;
 }
 
