@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src: url('fonts/hk_grotesk_pro_regular.woff2') format('woff2'), url('fonts/hk_grotesk_pro_regular.woff') format('woff');
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Paradroid-Mono";
+  src: url('fonts/ParadroidMonoLight.woff2') format('woff2'), url('fonts/ParadroidMonoLight.woff') format('woff');
+  font-weight: thin;
+}
+@font-face {
+  font-family: "Runalto";
+  src: url('fonts/Runalto.woff') format('woff');
+  font-weight: normal;
+}
+
+:root {
+  --coffee: #3F3334;
+  --coral: #EC847D;
+  --mint: #AFEFC9;
+  --blue: #255C99;
+  --yellow: #FBD87f;
+}
+
+body {
+  font-size: 1.5rem;
+  color: var(--coffee);
+  background-color: white;
+  margin: 160px 0 0 0;
+  position: relative;
+  font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
+}
+.header {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 160px;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: white;
+}
+@keyframes svg-mint {
+  from {points: 0px;}
+  to {width: 400px;}
+}
+.svg-corners {
+  position: fixed;
+  overflow: hidden;
+  width: 300px;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.svg-corners svg {
+  float: right;
+}
+#mint {
+  fill: var(--mint);
+  d: path("M0 0 L100 0 L100 15 Z");
+  transition: 1s cubic-bezier(0.14, 0.05, 0.36, 0.98) .05s;
+}
+#coral {
+  fill: var(--coral);
+  d: path("M50 0 L100 0 L100 20 Z");
+  transition: .75s cubic-bezier(0.14, 0.05, 0.36, 0.98);
+}
+.header-right:hover #mint {
+  d: path("M30 0 L100 0 L100 20 Z");
+}
+.header-right:hover #coral {
+  d: path("M70 0 L100 0 L100 30 Z");
+}
+.header a#logo {
+  width: 150px;
+}
+.header a {
+  float: left;
+  margin: 30px 40px;
+}
+@keyframes main-links {
+  0% {opacity:0; padding-top: 0px;}
+  50% {opacity: 50%;}
+  100% {opacity:100%; padding-top: 40px;}
+}
+.header-right {
+  float: right;
+  text-align: right;
+  padding-right: 70px;
+  animation: main-links 1s cubic-bezier(0.02, 0.7, 0.64, 0.99) forwards;
+  z-index: 100;
+}
+.header-right a {
+  font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--coffee);
+  margin: 10px 0 0 60px;
+}
+.header-right a:hover {
+  color: var(--coral);
+}
+#title {
+  font-family: 'Runalto','Times New Roman', Times, serif;
+  font-size: 1.8rem;
+  color: var(--coffee);
+  margin-right: 4px;
+}
+@keyframes title {
+  from {width: 0px;}
+  to {width: 400px;}
+}
+.section {
+  display: flex;
+  position: relative;
+  z-index: 5;
+  height: 70px;
+  width: 100%;
+  padding-top: 85px;
+}
+#section-bg {
+  z-index: 10;
+  position: absolute;
+  margin-top: 18px;
+  left:0;
+  background: var(--yellow);
+  transform: rotate(3deg);
+  transform-origin: 0% 0%;
+  height: 40px;
+  width: 400px;
+/*  animation: title .75s ease-out;
+  animation-fill-mode: forwards;*/
+}
+.section-title {
+  font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
+  font-size: 2.6rem;
+  color: var(--coffee);
+  -webkit-text-stroke: 1pt var(--coffee);
+  display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 20px;
+  overflow: hidden;
+  z-index: 15;
+}
+#tv {
+  background: black;
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin-top: 20px;
+}
+#tv video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
