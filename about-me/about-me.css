@@ -1,0 +1,109 @@
+@keyframes title {
+    from {width: 0px;}
+    to {width: 400px;}
+}
+@keyframes about_bg {
+    from {width: 0;}
+    to {width: 100%;}
+}
+#about_bg {
+    background-color: var(--mint);
+    transform: rotate(-3deg);
+    transform-origin: 0% 0%;
+    min-height: 600px;
+    line-height: 1em;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+}
+#about_content {
+    width: 80%;
+    min-width: 600px;
+    max-width: 1500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 10;
+    text-align: left;
+}
+#about_content img {
+    width: 300px;
+    border: white solid 5px;
+    margin-right: 15px;
+    vertical-align: top;
+}
+#about_blurb {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+#about_intro {
+    margin: 0;
+}
+#resume_section {
+    text-align: center;
+    min-width: 800px;
+    padding-top:30px;
+    padding-bottom: 40px;
+    opacity: 0;
+}
+#resume_container {
+    border: 20pt solid var(--coral);
+    width: 75vw;
+    min-width: 600px;
+    min-height: 300px;
+    display: block;
+    left: 12.5vw;
+    margin: 30px auto 0 auto;
+}
+#res_table {
+    width: 80%;
+    min-width: 600px;
+    max-width: 1500px;
+    position: relative;
+    z-index: 10;
+    display: inline-table;
+    margin: auto;
+    padding: 30px 0 40px 0;
+}
+#left_resume {
+    width: 50%;
+    padding-right: 25px;
+    height: auto;
+    vertical-align: top;
+    text-align: left;
+}
+#right_resume {
+    width: 50%;
+    padding-left: 25px;
+    height: auto;
+    vertical-align: top;
+    text-align: left;
+}
+.res_header {
+    font-family: 'Runalto', 'HK Grotesk', Helvetica, Arial;
+    font-size: 3rem;
+    color: var(--coffee);
+    margin: 35px 0 20px 0;
+}
+.res_title {
+    font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: var(--coffee);
+    -webkit-text-stroke: 0.75pt var(--coffee);
+    margin: 8px 0 20px 10px;
+}
+.res_body {
+    font-family: 'HK Grotesk', Helvetica, Arial;
+    font-size: 1.2rem;
+    color: var(--coffee);
+    margin: 3px 0 40px 20px;
+    line-height: 1.4rem;
+}
+#res_spacer {
+    width: 40%;
+    background-color: var(--coffee);
+    height: 2px;
+    margin: 50px auto 40px 0;
+    position: relative;
+}

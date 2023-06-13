@@ -2,7 +2,7 @@
 <html lang="en">
     
     <head>
-        <title>Caleb McTwigan | Portfolio</title>
+        <title>Caleb McTwigan | </title>
         <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
@@ -23,7 +23,7 @@
         <meta name="msapplication-config" content="/favicon/browserconfig.xml">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="main.js"></script>
         <link rel="stylesheet" href="main.css" type="text/css">
     </head>
 	<body>
@@ -32,20 +32,20 @@
                 <img src="images/CM-logo.png" width="150px">
             </a>
             <div class="header-right">
-                <a href="/bio" class="jumpy">
-                    <svg class="jumpy_svg" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <a href="/works" class="jumpy">
+                    <svg class="jumpy_svg" viewBox="0 0 270 100" xmlns="http://www.w3.org/2000/svg">
                         <path class="jumpy_bg" d="" />
-                    </svg>bio
+                    </svg>works
                 </a>
-                <a href="/portfolio" class="jumpy">
-                    <svg class="jumpy_svg" viewBox="0 0 500 100" xmlns="http://www.w3.org/2000/svg">
+                <a href="/resume" class="jumpy">
+                    <svg class="jumpy_svg" viewBox="0 0 310 100" xmlns="http://www.w3.org/2000/svg">
                         <path class="jumpy_bg" d="" />
-                    </svg>portfolio
+                    </svg>r&eacute;sum&eacute;
                 </a>
-                <a href="/contact" class="jumpy">
+                <a href="/about-me" class="jumpy">
                     <svg class="jumpy_svg" viewBox="0 0 400 100" xmlns="http://www.w3.org/2000/svg">
                         <path class="jumpy_bg" d="" />
-                    </svg>contact
+                    </svg>about me
                 </a>
                 <div class="svg-corners">
                     <svg id="mint_svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -59,11 +59,30 @@
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div id="section-bg"></div>
-            <div class="section-title">reel</div>
-        </div>
         <div id="tv">
+            <div id="tv-screen">
+                <video controls autoplay muted preload id="reel" class="screen">
+                    <source src="portfolio/video/JCM_Reel-2023.mp4" type=video/mp4>
+                    Your browser does not support the video tag. Consider updating your browser.
+                </video>
+<!--                 
+                <div id="play-button">
+                    <svg class="play-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 75">
+                        <path class="" id="pp-left" d=""/>
+                        <path class="" id="pp-right" d=""/>
+                    </svg>
+                </div>
+                <div id="unmute">
+                    UNMUTE
+                </div>
+                <div id="mute">
+                    MUTE
+                </div>
+-->
+            </div>
+            <div id="tv-credits">
+                Created with: After Effects, Illustrator, Premiere, Photoshop, Maya, and scanned mixed media.
+            </div>
         </div>
     </body>
 </html>
