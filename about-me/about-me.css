@@ -17,6 +17,15 @@
 .section_container {
     flex-direction: column;
 }
+#about_content {
+    position: relative;
+    float: left;
+    z-index: 10;
+    text-align: left;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
 #about_table {
     width: 90%;
     min-width: 600px;
@@ -31,25 +40,9 @@
     vertical-align: top;
     text-align: left;
 }
-#about_content {
-    position: relative;
-    float: left;
-    z-index: 10;
-    text-align: left;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-#about_blurb {
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    order: 2;
-}
 #profile_pic {
     margin-right: 15px;
     vertical-align: top;
-    /* flex-basis: 310px; */
     order: 3;
     padding-left: 30px;
 }

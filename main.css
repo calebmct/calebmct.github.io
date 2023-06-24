@@ -69,6 +69,10 @@ h3 {
   box-shadow: 0 0 24px 1px rgba(37,92,153,0.25);
   overflow-x: hidden;
 }
+.dl_link {
+  font-weight: bold;
+  color: var(--blue);
+}
 .svg-corners {
   position: fixed;
   width: 400px;
@@ -210,13 +214,30 @@ h3 {
 .section_container {
   width: 75vw;
   min-width: 600px;
-  min-height: 300px;
+  min-height: 100px;
   margin: 30px auto 50px auto;
   display: flex;
-  align-items: center;
+  align-items: start;
   text-align: left;
   border: 20pt solid var(--coral);
   padding-bottom: 30px;
+}
+.main_body_container {
+  width: 90%;
+  height: auto;
+  min-width: 600px;
+  max-width: 1500px;
+  position: relative;
+  display: inline-table;
+  margin: 30px auto 0 auto;
+  text-align: left;
+}
+.section_body_text {
+  font-size: 1.2rem;
+  color: var(--coffee);
+  background-color: white;
+  position: relative;
+  font-family: 'HK Grotesk', Helvetica, Arial, sans-serif;
 }
 #tv {
   background: white;
