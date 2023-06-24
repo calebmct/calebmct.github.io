@@ -3,6 +3,8 @@ $(document).ready(function() {
     var imgurl = 'images/CM-logo.gif'+'?a='+Math.random();
     $('#logo img').attr('src',imgurl);
     $('#logo img').attr('alt','Caleb McTwigan');
+}); // '(document).ready' function end
+
 /*
     // VIDEO HOVER -- UNMUTE & PLAY BUTTON DISPLAY
     $('#tv')
@@ -109,4 +111,3 @@ $(document).ready(function() {
         };
     }); // 'Play' function end
 */
-}); // '(document).ready' function end
