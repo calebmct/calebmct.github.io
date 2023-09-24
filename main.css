@@ -44,7 +44,8 @@ h1 {
 }
 h2 {
   font-family: 'Paradroid-Mono', 'Courier New', Courier, monospace;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: 1.4rem;
   color: var(--coffee);
   -webkit-text-stroke: 0.5pt var(--coffee);
   margin: 20px 0 5px 5px;

@@ -5,11 +5,12 @@
   flex-wrap: wrap;
   column-gap: 20px;
   justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 .workbox {
   width: 500px;
   height: auto;
-  margin: 0 20px;
+  margin: 20px 20px 0px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -21,15 +22,30 @@
   align-items: center;
   justify-content: center;
 }
+.design_img {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
 .work_video video {
   width: 500px;
   height: 280px;
+}
+.design_img .thumbs {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
 }
 .thumbs {
   width: 100%;
   height: 100%;
   z-index: 1;
   opacity: 100%;
+  background-repeat: no-repeat;
 }
 .works_captions {
   background-color: rgba(175, 239, 201, 0.6);
@@ -56,7 +72,7 @@
   transition-duration: 500ms;
 }
 
-/* PNG Thumbnails */
+/* PNG VIDEO Thumbnails */
 #thumb-raindrops {
   background-image: url('thumbs/th-raindrops.png');
 }
@@ -85,7 +101,58 @@
   background-image: url('thumbs/th-castes.png');
 }
 
-/* PRELOAD PREVIEWS */
+/* PNG VIDEO Thumbnails */
+#thumb-ad01 {
+  background-image: url(design_files/thumbs/design_ad01.png);
+}
+#thumb-ad02 {
+  background-image: url(design_files/thumbs/design_ad02.png);
+}
+#thumb-alexandria {
+  background-image: url(design_files/thumbs/design_alexandria.png);
+}
+#thumb-alt16 {
+  background-image: url(design_files/thumbs/design_alt16.png);
+}
+#thumb-artuploader {
+  background-image: url(design_files/thumbs/design_artuploader.png);
+}
+#thumb-cco {
+  background-image: url(design_files/thumbs/design_cco.png);
+}
+#thumb-conley {
+  background-image: url(design_files/thumbs/design_conley.png);
+}
+#thumb-ffxflt {
+  background-image: url(design_files/thumbs/design_ffxflt.png);
+}
+#thumb-frose {
+  background-image: url(design_files/thumbs/design_frose.png);
+}
+#thumb-july4 {
+  background-image: url(design_files/thumbs/design_july4.png);
+}
+#thumb-inkademy {
+  background-image: url(design_files/thumbs/design_inkademy.png);
+}
+#thumb-playingcards {
+  background-image: url(design_files/thumbs/design_playingcards.png);
+  background-repeat: no-repeat;
+}
+#thumb-render {
+  background-image: url(design_files/thumbs/design_render.png);
+}
+#thumb-sandman {
+  background-image: url(design_files/thumbs/design_sandman.png);
+}
+#thumb-strath {
+  background-image: url(design_files/thumbs/design_strath.png);
+}
+#thumb-sylk {
+  background-image: url(design_files/thumbs/design_sylk.png);
+}
+
+/* PRELOAD PREVIEWS & GRAPHICS */
 body::after {
   position:absolute;
   width:0;
@@ -98,9 +165,25 @@ body::after {
     url('previews/bank_shot.webm')
     url('previews/snowy.webm')
     url('previews/busy_start.webm')
-    url('previews/busy-end.webm')
+    url('previews/busy_end.webm')
     url('previews/muybridge.webm')
-    url('previews/castes.webm');
+    url('previews/castes.webm')
+    url('design_files/full/ad01.png')
+    url('design_files/full/ad02.png')
+    url('design_files/full/alexandria.png')
+    url('design_files/full/alt16.png')
+    url('design_files/full/artuploader.png')
+    url('design_files/full/cco.png')
+    url('design_files/full/conley.png')
+    url('design_files/full/ffxflt.png')
+    url('design_files/full/frose.png')
+    url('design_files/full/inkademy.png')
+    url('design_files/full/july4.png')
+    url('design_files/full/playingcards.png')
+    url('design_files/full/render.png')
+    url('design_files/full/sandman.png')
+    url('design_files/full/strath.png')
+    url('design_files/full/sylk.png');
 } /*
 #mgv_A-b:hover {
   background-image: url('gifs/de_video.gif');
