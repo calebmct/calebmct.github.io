@@ -21,24 +21,15 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .design_img {
   width: 500px;
-  height: 500px;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
+  height: auto;
 }
-.work_video video {
+.work_video video, .design_img img {
   width: 500px;
-  height: 280px;
-}
-.design_img .thumbs {
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
-  max-height: 500px;
+  height: 281px;
 }
 .thumbs {
   width: 100%;
@@ -48,9 +39,11 @@
   background-repeat: no-repeat;
 }
 .works_captions {
-  background-color: rgba(175, 239, 201, 0.6);
-  width: calc(100% - 30px);
-  height: calc(100% - 30px);
+  background-color: rgba(175, 239, 201, 0.5);
+  background-image: -moz-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border: 10px solid var(--coral);
   color: black;
   z-index: 2;
 }
@@ -67,11 +60,113 @@
   -ms-user-select: none;
   user-select: none;
 }
+.hover_preview {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  color: var(--coffee);
+  font-family: 'HK Grotesk', Helvetica, Arial;
+  font-size: 1rem;
+}
 .work_video:hover > .works_captions, .work_video:hover > .works_captions p, .work_video:hover > .thumbs {
   opacity: 0%;
   transition-duration: 500ms;
 }
-
+.section_container {
+  padding-bottom: 40px;
+}
+/* GRAPHIC DESIGN STYLING */
+.works_desc {
+  background-color: rgba(236, 132, 125, 0.4);
+  height: 45px;
+  margin-bottom: 20px;
+}
+.works_desc p {
+  margin: auto;
+  padding: 7px 15px 10px 15px;
+}
+.lightbox img {
+  border: 10px solid var(--coral);
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+/* .lightbox-target {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,.7);
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  z-index: 30;
+}
+.lightbox-target-inactive {
+  opacity: 0;
+  top: -100%;
+  overflow: hidden;
+}
+.lightbox-target-active {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  overflow: scroll;
+}
+.lightbox-target img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  border: 3px solid white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  box-sizing: border-box;
+  z-index: 30;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+.lightbox-target-inactive img {
+  max-height: 0%;
+  max-width: 0%;
+}
+.lightbox-target-active img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.lightbox-close {
+  display: block;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.5);
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: default;
+  top: 0;
+  z-index: 29;
+} */
+/* STICKY HEADERS */
+.section_title {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 160px;
+  display: block;
+}
+/* STYLE OVERRIDES */
+h2 {
+  margin: 0;
+  background-image: linear-gradient(var(--yellow), var(--yellow));
+  background-repeat:  no-repeat;
+  background-position-y: 18px;
+  background-size: auto;
+  padding: 0 5px 5px 5px;
+}
 /* PNG VIDEO Thumbnails */
 #thumb-raindrops {
   background-image: url('thumbs/th-raindrops.png');
@@ -101,57 +196,6 @@
   background-image: url('thumbs/th-castes.png');
 }
 
-/* PNG VIDEO Thumbnails */
-#thumb-ad01 {
-  background-image: url(design_files/thumbs/design_ad01.png);
-}
-#thumb-ad02 {
-  background-image: url(design_files/thumbs/design_ad02.png);
-}
-#thumb-alexandria {
-  background-image: url(design_files/thumbs/design_alexandria.png);
-}
-#thumb-alt16 {
-  background-image: url(design_files/thumbs/design_alt16.png);
-}
-#thumb-artuploader {
-  background-image: url(design_files/thumbs/design_artuploader.png);
-}
-#thumb-cco {
-  background-image: url(design_files/thumbs/design_cco.png);
-}
-#thumb-conley {
-  background-image: url(design_files/thumbs/design_conley.png);
-}
-#thumb-ffxflt {
-  background-image: url(design_files/thumbs/design_ffxflt.png);
-}
-#thumb-frose {
-  background-image: url(design_files/thumbs/design_frose.png);
-}
-#thumb-july4 {
-  background-image: url(design_files/thumbs/design_july4.png);
-}
-#thumb-inkademy {
-  background-image: url(design_files/thumbs/design_inkademy.png);
-}
-#thumb-playingcards {
-  background-image: url(design_files/thumbs/design_playingcards.png);
-  background-repeat: no-repeat;
-}
-#thumb-render {
-  background-image: url(design_files/thumbs/design_render.png);
-}
-#thumb-sandman {
-  background-image: url(design_files/thumbs/design_sandman.png);
-}
-#thumb-strath {
-  background-image: url(design_files/thumbs/design_strath.png);
-}
-#thumb-sylk {
-  background-image: url(design_files/thumbs/design_sylk.png);
-}
-
 /* PRELOAD PREVIEWS & GRAPHICS */
 body::after {
   position:absolute;
@@ -168,44 +212,19 @@ body::after {
     url('previews/busy_end.webm')
     url('previews/muybridge.webm')
     url('previews/castes.webm')
-    url('design_files/full/ad01.png')
-    url('design_files/full/ad02.png')
+    url('design_files/full/adlogos.png')
     url('design_files/full/alexandria.png')
-    url('design_files/full/alt16.png')
     url('design_files/full/artuploader.png')
-    url('design_files/full/cco.png')
+    url('design_files/full/astronaut.png')
+    url('design_files/full/ccologos.png')
     url('design_files/full/conley.png')
-    url('design_files/full/ffxflt.png')
     url('design_files/full/frose.png')
     url('design_files/full/inkademy.png')
     url('design_files/full/july4.png')
     url('design_files/full/playingcards.png')
-    url('design_files/full/render.png')
-    url('design_files/full/sandman.png')
-    url('design_files/full/strath.png')
+    url('design_files/full/quack.png')
+    url('design_files/full/renderthebacon.png')
+    url('design_files/full/renderthesandman.png')
+    url('design_files/full/strathmeade.png')
     url('design_files/full/sylk.png');
-} /*
-#mgv_A-b:hover {
-  background-image: url('gifs/de_video.gif');
 }
-#mgv_A-c:hover {
-  background-image: url('gifs/kim.gif');
-}
-#mgv_B-a:hover {
-  background-image: url('gifs/bank_shot.gif');
-}
-#mgv_B-b:hover {
-  background-image: url('gifs/snowy.gif');
-}
-#mgv_B-c:hover {
-  background-image: url('gifs/busy_start.gif');
-}
-#mgv_C-a:hover {
-  background-image: url('gifs/busy-end.gif');
-}
-#mgv_C-b:hover {
-  background-image: url('gifs/muybridge.gif');
-}
-#mgv_C-c:hover {
-  background-image: url('gifs/castes.gif');
-} */

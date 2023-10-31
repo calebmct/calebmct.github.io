@@ -21,11 +21,17 @@
         <link rel="shortcut icon" href="../favicon/favicon.ico">
         <meta name="msapplication-TileImage" content="../favicon/mstile-144x144.png">
         <meta name="msapplication-config" content="../favicon/browserconfig.xml">
+        <!-- Javascript -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="works.js"></script>
         <!-- Stylesheets -->
         <link rel="stylesheet" href="../main.css" type="text/css">
         <link rel="stylesheet" href="works.css" type="text/css">
     </head>
+
 	<body>
+        <!-- Header -->
         <div class="header">
             <a href="../index.html" id="logo">
                 <img src="../images/CM-logo.png" width="150px">
@@ -56,122 +62,221 @@
                 </div>
             </div>
         </div>
-        <div class="title_container">
-            <div class="title_bg"></div>
-            <div class="section-title">works - motion graphics &amp; video</div>
+        <div class="section_title">
+            motion graphics &amp; video
         </div>
-        <div class="section_container">
-            <div class="main_body_container">
-                <div class="works_container">
-                    <div class="workbox"> <!-- Raindrops -->
-                        <h2>Raindrops</h2>
-                        <div class="work_video" onmouseover="getElementById('raindrops').play()" onmouseout="getElementById('raindrops').pause()">
-                            <div class="works_captions"><p>Created with Illustrator, After Effects, and Maya</p></div>
-                            <div class="thumbs" id="thumb-raindrops"></div>
-                            <video muted preload disablepictureinpicture id="raindrops" loop>
-                                <source src="previews/raindrops.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+        <div class="coral_bg">
+            <div class="section_container">
+                <div class="main_body_container">
+                    <div class="works_container">
+                        <div class="workbox"> <!-- Raindrops -->
+                            <h2>Raindrops</h2>
+                            <div class="work_video" onmouseover="getElementById('raindrops').play()" onmouseout="getElementById('raindrops').pause()">
+                                <div class="works_captions">
+                                    <p>Created with Illustrator, After Effects, and Maya</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-raindrops"></div>
+                                <video muted preload disablepictureinpicture id="raindrops" loop>
+                                    <source src="previews/raindrops.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
-                    </div>
-                    <div class="workbox"> <!-- DE Video -->
-                        <h2>Design Elevation Promotion Video</h2>
-                        <div class="work_video" onmouseover="getElementById('de_video').play()" onmouseout="getElementById('de_video').pause()">
-                            <div class="works_captions"><p>Created with Premiere, After Effects, and Illustrator</p></div>
-                            <div class="thumbs" id="thumb-de_video"></div>
-                            <video muted preload disablepictureinpicture id="de_video" loop>
-                                <source src="previews/de_video.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+                        <div class="workbox"> <!-- DE Video -->
+                            <h2>Design Elevation Promotion Video</h2>
+                            <div class="work_video" onmouseover="getElementById('de_video').play()" onmouseout="getElementById('de_video').pause()">
+                                <div class="works_captions">
+                                    <p>Created with Premiere, After Effects, and Illustrator</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-de_video"></div>
+                                <video muted preload disablepictureinpicture id="de_video" loop>
+                                    <source src="previews/de_video.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
-                    </div>
-                    <div class="workbox"> <!-- Curious -->
-                        <h2>Furiously Curious</h2>
-                        <div class="work_video" onmouseover="getElementById('curious').play()" onmouseout="getElementById('curious').pause()">
-                            <div class="works_captions"><p>Created with After Effects and Illustrator</p></div>
-                            <div class="thumbs" id="thumb-curious"></div>
-                            <video muted preload disablepictureinpicture id="curious" loop>
-                                <source src="previews/curious.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+                        <div class="workbox"> <!-- Curious -->
+                            <h2>Furiously Curious</h2>
+                            <div class="work_video" onmouseover="getElementById('curious').play()" onmouseout="getElementById('curious').pause()">
+                                <div class="works_captions">
+                                    <p>Created with After Effects and Illustrator</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-curious"></div>
+                                <video muted preload disablepictureinpicture id="curious" loop>
+                                    <source src="previews/curious.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
-                    </div>
-                    <div class="workbox"> <!-- Bank Shot -->
-                        <h2>Bank Shot (48 hour film project)</h2>
-                        <div class="work_video" onmouseover="getElementById('bank_shot').play()" onmouseout="getElementById('bank_shot').pause()">
-                            <div class="works_captions"><p>Editing, color grading, sound syncing & enhancement in Premiere</p></div>
-                            <div class="thumbs" id="thumb-bank_shot"></div>
-                            <video muted preload disablepictureinpicture id="bank_shot" loop>
-                                <source src="previews/bank_shot.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+                        <div class="workbox"> <!-- Bank Shot -->
+                            <h2>Bank Shot (48 hour film project)</h2>
+                            <div class="work_video" onmouseover="getElementById('bank_shot').play()" onmouseout="getElementById('bank_shot').pause()">
+                                <div class="works_captions">
+                                    <p>Editing, color grading, sound syncing & enhancement in Premiere</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-bank_shot"></div>
+                                <video muted preload disablepictureinpicture id="bank_shot" loop>
+                                    <source src="previews/bank_shot.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
-                    </div>
-                    <div class="workbox"> <!-- Stopping by Woods on a Snowy Evening -->
-                        <h2>Stopping by Woods on a Snowy Evening</h2>
-                        <div class="work_video" onmouseover="getElementById('snowy').play()" onmouseout="getElementById('snowy').pause()">
-                            <div class="works_captions"><p>Created with Illustrator, After Effects, and scanned mixed media.</p></div>
-                            <div class="thumbs" id="thumb-snowy"></div>
-                            <video muted preload disablepictureinpicture id="snowy" loop>
-                                <source src="previews/snowy.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+                        <div class="workbox"> <!-- Stopping by Woods on a Snowy Evening -->
+                            <h2>Stopping by Woods Animation</h2>
+                            <div class="work_video" onmouseover="getElementById('snowy').play()" onmouseout="getElementById('snowy').pause()">
+                                <div class="works_captions">
+                                    <p>Created with Illustrator, After Effects, and scanned mixed media.</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-snowy"></div>
+                                <video muted preload disablepictureinpicture id="snowy" loop>
+                                    <source src="previews/snowy.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
-                    </div>
-                    <div class="workbox"> <!-- Busy Season Video (Start) -->
-                        <h2>Busy Season Engagement Video</h2>
-                        <div class="work_video" onmouseover="getElementById('busy_start').play()" onmouseout="getElementById('busy_start').pause()">
-                            <div class="works_captions"><p>Created with Illustrator and After Effects.</p></div>
-                            <div class="thumbs" id="thumb-busy_start"></div>
-                            <video muted preload disablepictureinpicture id="busy_start" loop>
-                                <source src="previews/busy_start.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+                        <div class="workbox"> <!-- Busy Season Video (Start) -->
+                            <h2>Busy Season Engagement Video</h2>
+                            <div class="work_video" onmouseover="getElementById('busy_start').play()" onmouseout="getElementById('busy_start').pause()">
+                                <div class="works_captions">
+                                    <p>Created with Illustrator and After Effects.</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-busy_start"></div>
+                                <video muted preload disablepictureinpicture id="busy_start" loop>
+                                    <source src="previews/busy_start.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
-                    </div>
-                    <div class="workbox"> <!-- Busy Season Video (End) -->
-                        <h2>Busy Season Engagement Video - Wrap</h2>
-                        <div class="work_video" onmouseover="getElementById('busy_end').play()" onmouseout="getElementById('busy_end').pause()">
-                            <div class="works_captions"><p>Created with Illustrator, After Effects, and Premiere.</p></div>
-                            <div class="thumbs" id="thumb-busy_end"></div>
-                            <video muted preload disablepictureinpicture id="busy_end" loop>
-                                <source src="previews/busy_end.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
-                            </video>
+                        <div class="workbox"> <!-- Busy Season Video (End) -->
+                            <h2>Busy Season Engagement Video - Wrap</h2>
+                            <div class="work_video" onmouseover="getElementById('busy_end').play()" onmouseout="getElementById('busy_end').pause()">
+                                <div class="works_captions">
+                                    <p>Created with Illustrator, After Effects, and Premiere.</p>
+                                    <div class="hover_preview">hover to preview</div>
+                                </div>
+                                <div class="thumbs" id="thumb-busy_end"></div>
+                                <video muted preload disablepictureinpicture id="busy_end" loop>
+                                    <source src="previews/busy_end.webm" type="video/webm">Your browser does not support the video tag. Consider updating your browser.
+                                </video>
+                            </div>
                         </div>
+                        <!-- BLANK BOX -->
+                        <div class="workbox">
+                        </div>
+                        <!-- END BLANK BOX -->
                     </div>
-                    <!-- BLANK BOX -->
-                    <div class="workbox">
-                    </div>
-                    <!-- END BLANK BOX -->
                 </div>
             </div>
         </div>
-        <div class="title_container">
-            <div class="title_bg"></div>
-            <div class="section-title">works - graphic design</div>
+        <div class="section_title">
+            graphic design
         </div>
-        <div class="section_container">
-            <div class="main_body_container">
-                <div class="section_body_text">
-                    <i>Updates coming soon...</i>
-                    <br/><br/>
-                    Graphic design examples | <a href="../images/J_Caleb_McTwigan-Graphic_Design_Logo_and_Typography_Portfolio.pdf" class="dl_link">PDF</a>
+        <div class="coral_bg">
+            <div class="section_container">
+                <div class="main_body_container">
+                    <div class="works_container">
+                        <div class="workbox">
+                            <h2>Custom Playing Cards</h2>
+                            <a class="lightbox design_img" id="playingcards">
+                                <img src="design_files/full/playingcards.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator, rendered in Dimension</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Illustration for Snapchat Filter</h2>
+                            <a class="lightbox design_img" id="conley">
+                                <img src="design_files/full/conley.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Sandman Mascot Design</h2>
+                            <a class="lightbox design_img" id="sandman">
+                                <img src="design_files/full/renderthesandman.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Bacon Mascot Design</h2>
+                            <a class="lightbox design_img" id="bacon">
+                                <img src="design_files/full/renderthebacon.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator and Photoshop</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Logo Design</h2>
+                            <a class="lightbox design_img" id="quack">
+                                <img src="design_files/full/quack.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>App Logo Design</h2>
+                            <a class="lightbox design_img" id="artuploader">
+                                <img src="design_files/full/artuploader.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Community Group Designs</h2>
+                            <a class="lightbox design_img" id="strathmeade">
+                                <img src="design_files/full/strathmeade.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Awards Event Lettering Design</h2>
+                            <a class="lightbox design_img" id="inkademy">
+                                <img src="design_files/full/inkademy.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Work Team Logos</h2>
+                            <a class="lightbox design_img" id="cco">
+                                <img src="design_files/full/ccologos.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Work Team Logos</h2>
+                            <a class="lightbox design_img" id="ad">
+                                <img src="design_files/full/adlogos.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Shirt Design</h2>
+                            <a class="lightbox design_img" id="july4">
+                                <img src="design_files/full/july4.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator and Photoshop</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Shirt Design for Client</h2>
+                            <a class="lightbox design_img" id="frose">
+                                <img src="design_files/full/frose.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator and Photoshop</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Sticker Design</h2>
+                            <a class="lightbox design_img" id="alexandria">
+                                <img src="design_files/full/alexandria.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <div class="workbox">
+                            <h2>Busy Season Design</h2>
+                            <a class="lightbox design_img" id="astronaut">
+                                <img src="design_files/full/astronaut.png"/>
+                            </a>
+                            <div class="works_desc"><p>Created with Illustrator</p></div>
+                        </div>
+                        <!-- Graphic design examples | <a href="../images/J_Caleb_McTwigan-Graphic_Design_Logo_and_Typography_Portfolio.pdf" class="dl_link">PDF</a> -->
+                    </div>
                 </div>
-            </div>
+            </div> <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         </div>
-        <!--
-        <div class="section_container">
-            <div class="main_body_container">
-                <div class="works_container">
-                    <div class="workbox"> 
-                        <h2>Custom Playing Cards</h2>
-                        <div class="design_img">
-                            <div class="works_captions"><p>Designs created with Illustrator, rendered with Adobe Dimension</p></div>
-                            <div class="thumbs" id="thumb-playingcards"></div>
-                        </div>
-                    </div>
-                    <div class="workbox">
-                        <h2>Sandman Mascot Design</h2>
-                        <div class="design_img">
-                            <div class="works_captions"><p>Created with Illustrator</p></div>
-                            <div class="thumbs" id="thumb-sandman"></div>
-                        </div>
-                    </div>
-            </div>
-        </div> -->
     </body>
 </html>

@@ -1,26 +1,10 @@
-@keyframes title {
-    from {width: 0px;}
-    to {width: 400px;}
-}
-@keyframes about_bg {
-    from {width: 0;}
-    to {width: 100%;}
-}
-#about_bg {
-    background-color: var(--mint);
-    min-height: 600px;
-    line-height: 1em;
-    width: 0;
-    position: absolute;
-    z-index: -1;
-}
 .section_container {
     flex-direction: column;
+    background-color: white;
 }
 #about_content {
     position: relative;
     float: left;
-    z-index: 10;
     text-align: left;
     display: flex;
     align-items: start;
@@ -31,7 +15,6 @@
     min-width: 600px;
     max-width: 1500px;
     position: relative;
-    z-index: 10;
     display: inline-table;
     margin: auto;
     padding: 30px 0 40px 0;
