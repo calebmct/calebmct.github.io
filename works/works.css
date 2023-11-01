@@ -189,6 +189,9 @@ h2 {
 #thumb-busy_end {
   background-image: url('thumbs/th-busy_end.png');
 }
+#thumb-burnout {
+  background-image: url('thumbs/th-burnout.png');
+}
 #thumb-muybridge {
   background-image: url('thumbs/th-muybridge.png');
 }
@@ -210,6 +213,7 @@ body::after {
     url('previews/snowy.webm')
     url('previews/busy_start.webm')
     url('previews/busy_end.webm')
+    url('previews/burnout.webm')
     url('previews/muybridge.webm')
     url('previews/castes.webm')
     url('design_files/full/adlogos.png')
