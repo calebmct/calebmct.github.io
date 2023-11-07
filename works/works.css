@@ -61,12 +61,23 @@
   user-select: none;
 }
 .hover_preview {
-  position: absolute;
   bottom: 10px;
   right: 20px;
+}
+.hover_preview, .enlarge_text {
+  position: absolute;
   color: var(--coffee);
   font-family: 'HK Grotesk', Helvetica, Arial;
   font-size: 1rem;
+  cursor: default;
+}
+.enlarge_text {
+  bottom: 20px;
+  right: 30px;
+  background-color: var(--mint);
+  color: black;
+  mix-blend-mode: screen;
+  padding: 0 5px 3px 5px;
 }
 .work_video:hover > .works_captions, .work_video:hover > .works_captions p, .work_video:hover > .thumbs {
   opacity: 0%;
@@ -85,12 +96,15 @@
   margin: auto;
   padding: 7px 15px 10px 15px;
 }
+.lightbox {
+  position: relative;
+}
 .lightbox img {
   border: 10px solid var(--coral);
   width: calc(100% - 20px);
   height: calc(100% - 20px);
 }
-/* .lightbox-target {
+.lightbox-target {
   position: fixed;
   width: 100%;
   background: rgba(0,0,0,.7);
@@ -147,7 +161,7 @@
   cursor: default;
   top: 0;
   z-index: 29;
-} */
+}
 /* STICKY HEADERS */
 .section_title {
   position: -webkit-sticky;
@@ -225,6 +239,10 @@ body::after {
     url('design_files/full/frose.png')
     url('design_files/full/inkademy.png')
     url('design_files/full/july4.png')
+    url('design_files/full/mission.png')
+    url('design_files/full/mission_th.png')
+    url('design_files/full/neptuneice.png')
+    url('design_files/full/neptuneice_th.png')
     url('design_files/full/playingcards.png')
     url('design_files/full/quack.png')
     url('design_files/full/renderthebacon.png')

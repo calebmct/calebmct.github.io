@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+// LIGHTBOX CODE FOR FULL IMAGE PREVIEWS
     Array.from(document.querySelectorAll('.lightbox')).forEach(element => {
         element.addEventListener('click', clickEvent => {
             activateLightbox(element.id);
