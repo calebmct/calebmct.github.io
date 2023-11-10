@@ -6,6 +6,18 @@
     from {width: 0;}
     to {width: 100%;}
 }
+.dl-links-container {
+    position: relative;
+    width: 75vw;
+    margin: auto;
+}
+#resume-dl-links {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    background-color: var(--mint);
+    padding: 3px 10px 5px 10px;
+}
 #res_table {
     width: 90%;
     min-width: 600px;
@@ -29,6 +41,7 @@
     height: auto;
     vertical-align: top;
     text-align: left;
+    margin-right: 20px;
 }
 .res_body {
     font-family: 'HK Grotesk', Helvetica, Arial;

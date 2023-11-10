@@ -206,7 +206,7 @@ h3 {
   pointer-events: none;
 }
 .coral_bg {
-  background-color: var(--coral); /* var(--coral); */
+  background-color: var(--coral);
   width: 100%;
   padding: 30px 0 50px 0;
 }
@@ -215,12 +215,6 @@ h3 {
   width: 100%;
   padding: 30px 0 50px 0;
 }
-/* .mint_bg {
-  background-color: var(--mint);
-}
-.yellow_bg {
-  background-color: var(--yellow);
-} */
 .section_container {
   width: 75vw;
   min-width: 600px;
