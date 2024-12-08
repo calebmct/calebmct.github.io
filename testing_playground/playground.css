@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    color: grey;
+}
+.contained {
+    width: 100%;
+}
+.tenbytentable {
+    text-align: center;
+}
+td {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+.ten_before {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-left: 30px;
+}
+.ten_current {
+    height: auto;
+    float: left;
+    margin-right: 40px;
+}
+.ten_diff {
+    height: auto;
+}
+.purple {
+    background-color: #ad5cc8;
+    margin: 0;
+    padding: 0;
+}
+.neutral {
+    background-color: darkslategrey;
+}
+.fifty {
+    background-color: #4c197c;
+}
+.zero {
+    background-color: #1d0633;
+}
+.star {
+    background-color: #becc3b;
+    border-radius: 10px;
+}
